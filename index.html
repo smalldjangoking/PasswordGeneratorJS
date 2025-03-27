@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-$END$
+<div class="container">
+    <div class="title-box">
+        <h3 class="title-text">
+            Generate a <span class="title-text-span">random password</span>
+        </h3>
+        <p class="title-tip">Never use an insecure password again.</p>
+    </div>
+    <button class="button-generator" onclick="generate()">Generate passwords</button>
+    <hr class="hr-line">
+    <div class="generated-fields">
+        <button id="generatedPassword1" class="generated-fields-item" onclick="copyText(this)"><span class="wrong-example">123321</span></button>
+        <button id="generatedPassword2" class="generated-fields-item" onclick="copyText(this)"><span class="wrong-example">kot2015</span></button>
+    </div>
+</div>
+<script src="index.js"></script>
 </body>
 </html>

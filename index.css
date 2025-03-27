@@ -1,5 +1,83 @@
+body {
+    width: 550px;
+    height: 550px;
+}
+
+.title-box {
+    flex-direction: column;
+    gap: 0; /* Add a small controlled gap between title-text and title-tip */
+    width: 100%;
+    /* Remove fixed height to let the box grow naturally */
+}
+
+.title-text {
+    color: white;
+    margin: 0;
+    font-size: 40px;
+}
+
+.title-text-span {
+    display: block;
+    color: #10B981
+}
+
+.title-tip {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #D5D4D8;
+}
+
 .container {
     display: flex;
     flex-direction: column;
+    gap: 0;
     background: #1F2937;
+    padding: 115px 52px;
+}
+
+.button-generator {
+    width: 191px;
+    height: 42px;
+    border-radius: 6px;
+    padding: 9px 17px 9px 15px;
+    color: white;
+    background: #10B981;
+    margin-top: 51px;
+    margin-bottom: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.hr-line {
+    display: flex;
+    width: 100%;
+    border: 1px #273549 solid;
+    margin-bottom: 35px;
+}
+
+.generated-fields {
+    display: flex;
+    gap: 24px;
+}
+
+.generated-fields-item {
+    display: flex;
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+    background: #273549;
+    align-items: center;
+    justify-content: center;
+    color: #55F991;
+    cursor: pointer;
+    border: none;
+}
+
+.wrong-example {
+    color: red;
+    text-decoration: line-through;
 }
